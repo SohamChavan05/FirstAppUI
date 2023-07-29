@@ -9,11 +9,64 @@
     android:foregroundTint="#FBFEFF"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="_____________or_____________"
+        android:textColor="#4D7377"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="108dp"
+        android:tint="#05AFC3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        app:layout_constraintVertical_bias="0.558"
+        app:srcCompat="@drawable/icons8_twitter_50" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#05AFC3"
+        android:tint="#05AFC3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        app:layout_constraintVertical_bias="0.558"
+        app:srcCompat="@drawable/icons8_linkedin_50" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:backgroundTint="#0A93B1"
+        android:tint="#05AFC3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        app:layout_constraintVertical_bias="0.558"
+        app:srcCompat="@drawable/icons8_facebook_50" />
+
     <Button
-        android:id="@+id/button_signin"
+        android:id="@+id/btnSignIn"
         android:layout_width="302dp"
         android:layout_height="63dp"
         android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/amaranth_bold"
         android:text="Sign In"
         android:textColor="#05ACC1"
         android:textSize="21sp"
@@ -26,10 +79,11 @@
         app:layout_constraintVertical_bias="0.637" />
 
     <Button
-        android:id="@+id/button_login"
+        android:id="@+id/btnLogin"
         android:layout_width="302dp"
         android:layout_height="63dp"
         android:backgroundTint="#FFFFFFFF"
+        android:fontFamily="@font/amaranth_bold"
         android:text="Log In"
         android:textColor="#05ACC1"
         android:textSize="21sp"
@@ -38,53 +92,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_signin"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignIn"
         app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
-        android:backgroundTint="#0A93B1"
-        android:tint="#05AFC3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_login"
-        app:layout_constraintVertical_bias="0.435"
-        app:srcCompat="@drawable/icons8_facebook_50" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#05AFC3"
-        android:tint="#05AFC3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView4"
-        app:layout_constraintHorizontal_bias="0.545"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/button_login"
-        app:layout_constraintVertical_bias="0.435"
-        app:srcCompat="@drawable/icons8_linkedin_50" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="112dp"
-        android:tint="#05AFC3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_login"
-        app:layout_constraintVertical_bias="0.435"
-        app:srcCompat="@drawable/icons8_twitter_50" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="250dp"
         android:layout_height="132dp"
-        app:layout_constraintBottom_toTopOf="@+id/button_signin"
+        app:layout_constraintBottom_toTopOf="@+id/btnSignIn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -100,7 +115,7 @@
         android:textColor="#FFF"
         android:textSize="19sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button_signin"
+        app:layout_constraintBottom_toTopOf="@+id/btnSignIn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.535"
         app:layout_constraintStart_toStartOf="parent"
@@ -111,7 +126,7 @@
         android:id="@+id/imageView8"
         android:layout_width="158dp"
         android:layout_height="138dp"
-        app:layout_constraintBottom_toTopOf="@+id/button_signin"
+        app:layout_constraintBottom_toTopOf="@+id/btnSignIn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
